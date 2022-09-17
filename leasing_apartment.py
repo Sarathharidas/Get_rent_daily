@@ -91,7 +91,7 @@ scope =["https://spreadsheets.google.com/feeds",'https://www.googleapis.com/auth
 creds = ServiceAccountCredentials.from_json_keyfile_name('C:/Users/sarat/downloads/lattitude-361301-82ca12695bca.json', scope)
 
 # authorize the clientsheet 
-client = gspread.authorize(creds)
+client = gc.authorize(creds)
 
 
 sheet = client.open('Lattitude Rent')
